@@ -6,10 +6,10 @@
 	<title>OpenUI5 Todo App</title>
 
 	<script id="sap-ui-bootstrap"
-		src="resources/sap-ui-core.js"
+		src="https://sapui5.hana.ondemand.com/1.73.1/resources/sap-ui-core.js"
 		data-sap-ui-libs="sap.m"
 		data-sap-ui-xx-waitForTheme="true"
-		data-sap-ui-theme="sap_belize_plus"
+		data-sap-ui-theme="sap_fiori_3"
 		data-sap-ui-resourceRoots='{
 			"sap.ui.demo.todo": "./"
 		}'
@@ -18,6 +18,8 @@
 		data-sap-ui-async="true">
 	</script>
 </head>
+
+<script async src="./scripts/mockserver.js" ></script>
 
 <body class="sapUiBody">
 	<div data-sap-ui-component data-name="sap.ui.demo.todo" data-id="container" data-settings='{"id" : "todo"}'></div>

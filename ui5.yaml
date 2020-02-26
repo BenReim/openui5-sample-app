@@ -1,4 +1,25 @@
-specVersion: '1.0'
+specVersion: '1.1'
 metadata:
   name: openui5-sample-app
 type: application
+builder:
+  resources:
+    excludes:
+      - "!sap/ui/demo/todo/scripts/"
+  bundles:
+  - bundleDefinition:
+      name: sap/ui/demo/todo/Component-preload.js
+      defaultFileTypes:
+      - ".js"
+      - ".json"
+      - ".xml"
+      - ".html"
+      - ".properties"
+      sections:
+      - mode: preload
+        filters:
+        - "sap/ui/demo/todo"
+        - "!sap/ui/demo/todo/scripts/"
+        resolve: false
+    bundleOptions:
+      optimize: true
